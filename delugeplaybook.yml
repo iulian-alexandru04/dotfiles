@@ -1,8 +1,11 @@
 ---
 - hosts: myserver
-  sudo: yes
+  become: yes
 
   tasks:
+  - name: Update package list
+    apt: update_cache=yes
+
   - name: Ensure that system daemon is installed
     apt: pkg=systemd state=present
 
