@@ -1,0 +1,7 @@
+---
+- hosts: clients
+  sudo: yes
+
+  tasks:
+    - name: Install deluge
+      apt: pkg=deluge state=present
