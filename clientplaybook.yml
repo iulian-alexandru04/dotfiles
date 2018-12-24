@@ -1,5 +1,5 @@
 ---
-- hosts: clients
+- hosts: localhost
   sudo: yes
 
   tasks:

@@ -29,16 +29,16 @@
   - name: Config the deluge daemon service
     template:
       src: deluged.service
-      dest: /etc/systemd/system/deluged.service
+      dest: /etc/systemd/system/deluge_daemon.service
 
   - name: Start deluge daemon to create default config (if none present)
-    service: name=deluged state=started
+    service: name=deluge_daemon state=started
 
   - name: Wait a few seconds (ensure deluged has time to do it's job)
     pause: seconds=10
 
   - name: Stop deluge daemon (we will modify some config files)
-    service: name=deluged state=stopped
+    service: name=deluge_daemon state=stopped
 
   - name: Add new user to deluge daemon
     lineinfile:
@@ -54,7 +54,7 @@
       state: present
   
   - name: Start deluge daemon at boot-up
-    service: name=deluged enabled=yes state=started
+    service: name=deluge_daemon enabled=yes state=started
 
   - name: Config the deluge web UI service
     template:
