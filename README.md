@@ -1,5 +1,6 @@
 this repo will host all my setup files
 
+supported distros: ubuntu
 ANSIBLE > 2.6
 
 ```bash
