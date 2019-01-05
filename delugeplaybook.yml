@@ -1,5 +1,5 @@
 ---
-- hosts: myserver
+- hosts: local
   become: yes
 
   tasks:
