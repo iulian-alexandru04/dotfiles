@@ -9,3 +9,7 @@ set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
+" Set tab width to 4
+" Use spaces instead of tabs
+set ts=4 sts=4 sw=4 expandtab
+
