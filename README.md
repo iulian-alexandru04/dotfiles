@@ -14,6 +14,19 @@ Run playbook:
 ```bash
 sudo ansible-playbook -i inventory delugeplaybook.yml
 ```
+
+Install docker:
+```bash
+sudo apt install curl
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+```
+
 Backing up deluge metadata:
 ```bash
 tar -cf deluge_meta.tar /var/lib/deluge/.config/deluge
