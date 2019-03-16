@@ -10,6 +10,10 @@ sudo apt update
 sudo apt install ansible
 ```
 
+Run playbook:
+```bash
+sudo ansible-playbook -i inventory delugeplaybook.yml
+```
 Backing up deluge metadata:
 ```bash
 tar -cf deluge_meta.tar /var/lib/deluge/.config/deluge
