@@ -1,0 +1,22 @@
+---
+- hosts: local
+  become: yes
+
+  tasks:
+  - name: Ensrue x2go repository is present
+    apt_repository:
+      repo: ppa:x2go/stable
+
+  - name: Update package list
+    apt: update_cache=yes
+
+  - name: Ensure xfce4 desktop enviroment is installed
+    apt: pkg=xfce4 state=present
+
+  - name: Ensure x2go is installed
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+      - x2goserver 
+      - x2goserver-xsession
