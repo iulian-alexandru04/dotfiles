@@ -1,7 +1,13 @@
 this repo will host all my setup files
 
-supported distros: ubuntu
+supported distros: ubuntu  
 ANSIBLE > 2.6
+
+Installing zfs:
+```bash
+sudo apt install zfsutils-linux
+zpool import storage
+```
 
 Installing latest version of ansible:
 ```bash
@@ -25,15 +31,5 @@ sudo add-apt-repository \
    stable"
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io
-```
-
-Backing up deluge metadata:
-```bash
-tar -cf deluge_meta.tar /var/lib/deluge/.config/deluge
-```
-
-Restoring deluge metadata:
-```bash
-sudo tar -xf deluge_meta.tar -C /var/lib/deluge/.config/deluge
 ```
 

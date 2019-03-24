@@ -9,3 +9,6 @@
     - name: Install vim
       apt: pkg=vim state=present
 
+    - name: Install x2go client
+      apt: pkg=x2goclient state=present
+
