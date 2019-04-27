@@ -1,5 +1,5 @@
 cd deluge_docker
-docker build -t deluge .
+sudo docker build -t deluge .
 
 sudo docker run \
 -d \
