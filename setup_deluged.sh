@@ -6,5 +6,7 @@ sudo docker run \
 --name deluge \
 --network=host \
 --restart unless-stopped \
+-v /tmp:/incomplete \
 -v /storage/deluge:/root/.config/deluge \
+-v /storage:/storage \
 deluge
