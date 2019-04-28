@@ -13,23 +13,20 @@ Installing latest version of ansible:
 ```bash
 sudo apt-add-repository ppa:ansible/ansible
 sudo apt update
-sudo apt install ansible
+sudo apt install -y ansible
 ```
 
 Run playbook:
 ```bash
-sudo ansible-playbook -i inventory delugeplaybook.yml
+sudo ansible-playbook -i inventory clientplaybook.yml
 ```
 
 Install docker:
 ```bash
 sudo apt install curl
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt update
-sudo apt install docker-ce docker-ce-cli containerd.io
+sudo apt install -y docker-ce docker-ce-cli containerd.io
 ```
 
