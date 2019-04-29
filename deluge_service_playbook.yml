@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  become: yes
+
+  tasks:
+    - name: make sure deluge container is running
+      docker_container:
+        name: deluge
+        image: deluge
+        network_mode: host
+        restart_policy: unless-stopped
+        volumes:
+          - /tmp:/incomplete
+          - /storage/deluge:/root/.config/deluge
+          - /storage:/storage
+
