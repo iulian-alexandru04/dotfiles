@@ -1,0 +1,26 @@
+---
+- hosts: localhost
+  become: yes
+
+  tasks:
+    - name: make sure plex container is running
+      docker_container:
+        name: plex
+        image: plexinc/pms-docker
+        pull: yes
+        network_mode: host
+        restart_policy: unless-stopped
+        env: 
+          PLEX_CLAIM: "{{ plex_claim }}"
+        volumes:
+          - /storage/plex/database:/config
+          - /tmp:/transcode
+          - /storage/media:/data
+      vars:
+        plex_claim: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          39323264623361306433303264626265313636353739383064326339343538666664616234663865
+          3564376338353161653233326563363866623034386462610a333165626466626239633761666539
+          66613964323433663265633361386632333636306237656635616532396665626262653130626536
+          3637393564366636340a383732643739326165626361313136626364373866633532343838343531
+          61373132646639636330326534383532343939356638356463613063356439366234
