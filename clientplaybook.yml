@@ -12,3 +12,6 @@
     - name: Install x2go client
       apt: pkg=x2goclient state=present
 
+    - name: Install tmux
+      apt: pkg=tmux state=present
+
