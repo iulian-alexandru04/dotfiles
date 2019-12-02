@@ -1,8 +1,10 @@
-this repo will host all my setup files
+This repo will host all my setup files
 
-supported distros: ubuntu  
-ANSIBLE > 2.6 
-DOCKER
+Supported linux flavors: Debian-based  
+
+Requirements:
+- ANSIBLE > 2.6 
+- DOCKER
 
 Installing zfs:
 ```bash
