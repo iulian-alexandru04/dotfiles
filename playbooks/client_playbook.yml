@@ -3,15 +3,27 @@
   become: yes
 
   tasks:
-    - name: Install deluge
-      apt: pkg=deluge state=present
-
     - name: Install vim
       apt: pkg=vim state=present
 
-    - name: Install x2go client
-      apt: pkg=x2goclient state=present
+    - name: Create symbolic link for .vimrc
+      file:
+        src: "~/dotfiles/.vimrc"
+        dest: "~/.vimrc"
+        state: link
 
     - name: Install tmux
       apt: pkg=tmux state=present
+
+    - name: Create symbolic link for .tmux.conf
+      file:
+        src: "~/dotfiles/.tmux.conf"
+        dest: "~/.tmux.conf"
+        state: link
+
+    - name: Install deluge
+      apt: pkg=deluge state=present
+
+    - name: Install x2go client
+      apt: pkg=x2goclient state=present
 
