@@ -14,6 +14,6 @@
         restart_policy: unless-stopped
         volumes:
           - /tmp:/incomplete
-          - /storage/deluge:/root/.config/deluge
+          - /storage/metadata/deluge:/root/.config/deluge
           - /storage:/storage
 

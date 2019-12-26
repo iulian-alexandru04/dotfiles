@@ -16,7 +16,7 @@
         env: 
           PLEX_CLAIM: "{{ plex_claim }}"
         volumes:
-          - /storage/plex/database:/config
+          - /storage/metadata/plex/database:/config
           - /tmp:/transcode
           - /storage/media:/data
       vars:
