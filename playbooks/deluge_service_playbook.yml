@@ -3,6 +3,9 @@
   become: yes
 
   tasks:
+    - name: Install python-docker
+      apt: pkg=python-docker state=present
+
     - name: make sure deluge container is running
       docker_container:
         name: deluge
