@@ -27,3 +27,10 @@
     - name: Install x2go client
       apt: pkg=x2goclient state=present
 
+    - name: Set regular clean-up of the Downloads directory
+      cron:
+        name: "Remove old files from Downloads"
+        special_time: "hourly"
+        job: "~/dotfiles/scripts/remove_old_files_from_downloads.sh"
+        user: "alex"
+
