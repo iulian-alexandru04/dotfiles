@@ -1,3 +1,14 @@
+packadd minpac
+
+call minpac#init()
+
+" minpac must have {'type': 'opt'} so that it can be loaded with `packadd`.
+call minpac#add('k-takata/minpac', {'type': 'opt'})
+
+" Add other plugins here.
+call minpac#add('tpope/vim-surround')
+
+
 " Enable both line number and relative numbers
 set nu rnu
 

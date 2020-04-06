@@ -12,6 +12,11 @@
         dest: "~/.vimrc"
         state: link
 
+    - name: Install minpac (vim package manager)
+      git:
+        repo: "https://github.com/k-takata/minpac.git"
+        dest: ~/.vim/pack/minpac/opt/minpac
+
     - name: Install tmux
       apt: pkg=tmux state=present
 
