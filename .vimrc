@@ -7,6 +7,7 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 
 " Add other plugins here.
 call minpac#add('tpope/vim-surround')
+call minpac#add('airblade/vim-gitgutter')
 call minpac#add('morhetz/gruvbox')
 
 " Colorscheme
