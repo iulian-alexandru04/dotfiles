@@ -7,7 +7,11 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 
 " Add other plugins here.
 call minpac#add('tpope/vim-surround')
+call minpac#add('morhetz/gruvbox')
 
+" Colorscheme
+colorscheme gruvbox
+set background=dark
 
 " Enable both line number and relative numbers
 set nu rnu
