@@ -1,10 +1,10 @@
 ---
 - hosts: localhost
-  become: yes
 
   tasks:
     - name: Install vim
       apt: pkg=vim state=present
+      become: yes
 
     - name: Create symbolic link for .vimrc
       file:
@@ -19,6 +19,7 @@
 
     - name: Install tmux
       apt: pkg=tmux state=present
+      become: yes
 
     - name: Create symbolic link for .tmux.conf
       file:
@@ -28,9 +29,11 @@
 
     - name: Install deluge
       apt: pkg=deluge state=present
+      become: yes
 
     - name: Install x2go client
       apt: pkg=x2goclient state=present
+      become: yes
 
     - name: Set regular clean-up of the Downloads directory
       cron:
