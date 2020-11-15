@@ -27,6 +27,10 @@
         dest: "~/.tmux.conf"
         state: link
 
+    - name: Install chromium browser
+      apt: pkg=chromium-browser state=present
+      become: yes
+
     - name: Install deluge
       apt: pkg=deluge state=present
       become: yes
