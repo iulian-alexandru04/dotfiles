@@ -39,6 +39,10 @@
       apt: pkg=x2goclient state=present
       become: yes
 
+    - name: Install virtual-box
+      apt: pkg=virtualbox state=present
+      become: yes
+
     - name: Set regular clean-up of the Downloads directory
       cron:
         name: "Remove old files from Downloads"
