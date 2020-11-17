@@ -43,6 +43,10 @@
       apt: pkg=virtualbox state=present
       become: yes
 
+    - name: Install VLC
+      apt: pkg=vlc state=present
+      become: yes
+
     - name: Set regular clean-up of the Downloads directory
       cron:
         name: "Remove old files from Downloads"
