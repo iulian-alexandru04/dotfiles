@@ -29,3 +29,6 @@ highlight SpecialKey guifg=#4a4a59
 " Use spaces instead of tabs
 set ts=4 sts=4 sw=4 expandtab
 
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
