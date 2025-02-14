@@ -1,0 +1,29 @@
+alias-finder
+autoenv # similar: dotenv, direnv 
+autojump # similar: z, v 
+docker 
+encode64 
+extract 
+fzf 
+git 
+# git-auto-fetch 
+# git-escape-magic 
+# git-extras 
+# git-lfs 
+gitignore 
+helm 
+httpie 
+isodate 
+istioctl 
+# jenv 
+jsontools 
+jump 
+kind 
+kn 
+kops 
+kubectl 
+# lein 
+# lpass 
+macos 
+# markdown editor 
+minikube
