@@ -1,29 +1,143 @@
 alias-finder
+aliases
+# argocd
 autoenv # similar: dotenv, direnv 
-autojump # similar: z, v 
+autojump # similar: z, v, fasd, scd, wd, zoxide
+autopep8 # python
+aws
+# azure
+bgnotify
+colorize
+command-not-found
+copyfile
+dirhistory # similar: dircycle
+# ? dash
 docker 
-encode64 
 extract 
+# install eza
+# fluxcd
+# forklift
 fzf 
+# gcloud
+gh
 git 
 # git-auto-fetch 
 # git-escape-magic 
 # git-extras 
 # git-lfs 
+# git-prompt
+# gitfast
 gitignore 
+# globalias
+# gradle
 helm 
+zsh-history-substring-search
 httpie 
 isodate 
 istioctl 
+# ? zsh-ipfs
 # jenv 
+# ? jira
 jsontools 
-jump 
+jump # similar: pj
+k9s
+# ? kate
+# ? keychain
 kind 
 kn 
 kops 
 kubectl 
+last-working-dir
 # lein 
 # lpass 
-macos 
+# macos 
 # markdown editor 
+microk8s
 minikube
+mvn
+nats
+# ? ngrok
+# ? otp
+node
+nodenv
+npm
+# oc
+pep8
+per-directory-history
+pip
+pipenv
+podman
+poetry-env
+poetry
+pre-commit
+# ? procs
+# ? profiles
+pyenv
+pylint
+python
+qodana
+# rbw
+rclone
+react-native
+redis-cli
+rsync
+safe-paste
+scala
+# screen
+sdk
+shrink-path
+# sigstore
+singlechar
+skaffold
+spring
+sprunge
+ssh
+# ? starship or p10k or spaceship-prompt
+# sublime-merge
+# sublime
+sudo
+# supervisor
+svcat
+systemadmin
+systemd
+# tailscale
+# terraform
+thefuck
+themes
+tig
+timoni
+tldr
+tmux-cssh
+tmux
+tmuxinator
+toolbox
+torrent
+transfer
+ubuntu
+ufw
+universalarchive
+urltools
+uv
+vagrant-prompt
+vagrant
+vault
+vi-mode
+vim-interaction
+virtualenv
+virtualenvwrapper
+volta
+vscode
+vundle
+wakeonlan
+web-search
+yarn
+zbell
+zsh-interactive-cd
+zsh-navigation-tools
+zsh-syntax-highlighting
+zsh-autosuggestions # ? similar to: zsh-autocomplete
+# install tmux, vim
+# https://github.com/denysdovhan/dotfiles
+# https://github.com/patrik-csak/auto-terminal-profile
+# MAC -> iTerm2
+
