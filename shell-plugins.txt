@@ -1,7 +1,7 @@
 alias-finder
 aliases
 # argocd
-autoenv # similar: dotenv, direnv 
+autoenv
 autojump # similar: z, v, fasd, scd, wd, zoxide
 autopep8 # python
 aws
@@ -14,7 +14,6 @@ dirhistory # similar: dircycle
 # ? dash
 docker 
 extract 
-# install eza
 # fluxcd
 # forklift
 fzf 
@@ -132,11 +131,12 @@ wakeonlan
 web-search
 yarn
 zbell
+zsh-autocomplete
+zsh-autosuggestions 
 zsh-interactive-cd
 zsh-navigation-tools
 zsh-syntax-highlighting
-zsh-autosuggestions # ? similar to: zsh-autocomplete
-# install tmux, vim
+# install eza, tmux, vim
 # https://github.com/denysdovhan/dotfiles
 # https://github.com/patrik-csak/auto-terminal-profile
 # MAC -> iTerm2
